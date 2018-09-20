@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/day_03_response/day_03_response.iml" filepath="$PROJECT_DIR$/day_03_response/day_03_response.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_04/day_04.iml" filepath="$PROJECT_DIR$/day_04/day_04.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_04_task/day_04_task.iml" filepath="$PROJECT_DIR$/day_04_task/day_04_task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task_jdbc/task_jdbc.iml" filepath="$PROJECT_DIR$/task_jdbc/task_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/task_login/task_login.iml" filepath="$PROJECT_DIR$/task_login/task_login.iml" />
     </modules>
   </component>
