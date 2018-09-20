@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style>
+        form {
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<form action="/loginp" method="post">
+    <h1>登录</h1>
+    <label>用户名 <input type="text" name="username"></label><br>
+    <label>密码&nbsp;&nbsp;&nbsp <input type="text" name="password"></label><br>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>

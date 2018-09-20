@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWebCode.iml" filepath="$PROJECT_DIR$/JavaWebCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_02/day_02.iml" filepath="$PROJECT_DIR$/day_02/day_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_03_response/day_03_response.iml" filepath="$PROJECT_DIR$/day_03_response/day_03_response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_04/day_04.iml" filepath="$PROJECT_DIR$/day_04/day_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_04_task/day_04_task.iml" filepath="$PROJECT_DIR$/day_04_task/day_04_task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task_login/task_login.iml" filepath="$PROJECT_DIR$/task_login/task_login.iml" />
+    </modules>
+  </component>
+</project>
