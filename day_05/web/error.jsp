@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-
+<%=pageContext.getAttribute("pageContext")%>
+<%=request.getAttribute("request")%>
+<%=session.getAttribute("session")%>
+<%=application.getAttribute("application")%>
 </body>
 </html>
