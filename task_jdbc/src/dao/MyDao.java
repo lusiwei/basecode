@@ -6,6 +6,8 @@ import util.JDBCUtils;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyDao<T> {
     private Statement statement;
@@ -29,6 +31,9 @@ public class MyDao<T> {
         }
         return 0;
     }
+
+//    public List<T> queryList(Connection connection, Class<T> cls, String sql, Object... objects) {
+//    }
 
     public T querySingle(Connection connection, Class<T> cls, String sql, Object... objects) {
         T t = null;
