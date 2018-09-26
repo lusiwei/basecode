@@ -11,13 +11,15 @@ public class myFilter implements Filter {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
+        System.out.println("进入filter");
         ServletRequest requestProxy = (ServletRequest) Proxy.newProxyInstance(myFilter.class.getClassLoader(), req.getClass().getInterfaces(), new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                if (method.equals("getParameter")) {
+                if (method.getName().equals("getParameter")) {
                     String invoke = (String) method.invoke(req, args);
                     if (invoke.contains("小马聪聪")) {
                         invoke = invoke.replace("小马聪聪", "****");
+                        System.out.println("--------");
                     }
                     return invoke;
                 } else {
@@ -25,6 +27,7 @@ public class myFilter implements Filter {
                 }
             }
         });
+        System.out.println(requestProxy);
         chain.doFilter(requestProxy, resp);
     }
 
