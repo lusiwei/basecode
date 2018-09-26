@@ -3,11 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaWebCode.iml" filepath="$PROJECT_DIR$/JavaWebCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day925_filter/day925_filter.iml" filepath="$PROJECT_DIR$/day925_filter/day925_filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day926/day926.iml" filepath="$PROJECT_DIR$/day926/day926.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_02/day_02.iml" filepath="$PROJECT_DIR$/day_02/day_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_03_response/day_03_response.iml" filepath="$PROJECT_DIR$/day_03_response/day_03_response.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_04/day_04.iml" filepath="$PROJECT_DIR$/day_04/day_04.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_04_task/day_04_task.iml" filepath="$PROJECT_DIR$/day_04_task/day_04_task.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_05/day_05.iml" filepath="$PROJECT_DIR$/day_05/day_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_05_task/day_05_task.iml" filepath="$PROJECT_DIR$/day_05_task/day_05_task.iml" />
       <module fileurl="file://$PROJECT_DIR$/task_jdbc/task_jdbc.iml" filepath="$PROJECT_DIR$/task_jdbc/task_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/task_login/task_login.iml" filepath="$PROJECT_DIR$/task_login/task_login.iml" />
     </modules>

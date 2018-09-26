@@ -14,6 +14,7 @@ public class PageUtils<T> {
         return dataList;
     }
 
+
     public void setDataList(List<T> dataList) {
         this.dataList = dataList;
     }
@@ -43,7 +44,7 @@ public class PageUtils<T> {
     }
 
     public int getTotalPage() {
-        return totalCount%totalPage==0?totalCount/totalPage:totalCount/totalPage+1;
+        return totalCount%pageSize==0?totalCount/pageSize:totalCount/pageSize+1;
     }
 
 
