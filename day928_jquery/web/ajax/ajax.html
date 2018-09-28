@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            // $("input[type='button']").on("click", function () {
+            //     $.ajax({
+            //         type: "GET",
+            //         url: "/ajaxServlet1",
+            //         data: {
+            //             code: "1234"
+            //         },
+            //         success: function (data) {
+            //             alert(data)
+            //         },
+            //         error: function () {
+            //             alert("ajax 请求出错")
+            //         }
+            //     })
+            // $("input[type='button']").on("click", function () {
+            //     $.get("/ajaxServlet", {code: "1234"}, function (d) {
+            //         alert("hello")
+            //         alert(d)
+            //     })
+            // })
+            $("input[type='button']").on("click", function () {
+                $.post("/ajaxServlet", {code: $("#code")[0].value}, function (d) {
+                    alert("hello")
+                    alert(d)
+                })
+            })
+
+
+        })
+    </script>
+</head>
+<body>
+<form action="" id="form">
+    用户名:<input type="text"><br>
+    密码: <input type="password"><br>
+    验证码: <input type="text" id="code" name="code">
+    <input type="button" value="发送ajax请求" id="btn">
+</form>
+</body>
+</html>

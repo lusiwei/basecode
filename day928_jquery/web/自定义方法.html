@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function () {
+            $.fn.extend({
+                mymethod: function () {
+                    alert("自定义方法")
+                }
+            })
+        })
+        $(function () {
+            $("input").click(function () {
+                $(this).mymethod();
+            })
+        })
+    </script>
+</head>
+<body>
+<input type="text">
+</body>
+</html>

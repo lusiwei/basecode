@@ -46,10 +46,11 @@
         "../img/man05.jpg",
         "../img/man06.jpg"
     ];
+
     let i;
     $("#startID").click(function () {
         i=setInterval(function () {
-            $("#img2ID")[0].src = imgs[parseInt(Math.random() * 7)];
+            $("#img2ID")[0].src = imgs[parseInt(Math.random() * imgs.length)];
         }, 100)
         $(this).prop("disabled",true);
     })
