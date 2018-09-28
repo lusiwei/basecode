@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="myJdbcJar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day928_task/web/WEB-INF/lib/myJdbcJar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
