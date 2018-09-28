@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-2.1.0.min.js"></script>
+    <script>
+        $(function () {
+
+            // 获取myinput 的value值
+            alert($("#myinput")[0].value);
+
+            // 获取mydiv的标签体内容
+            alert($("#myinput").html);
+
+            // 获取mydiv文本内容
+            alert($("#myinput").text);
+        })
+
+    </script>
+
+</head>
+<body>
+<input id="myinput" type="text" name="username" value="张三"/><br/>
+<div id="mydiv"><p><a href="#">标题标签</a></p></div>
+</body>
+</html>
