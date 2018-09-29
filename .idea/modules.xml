@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/day_04_task/day_04_task.iml" filepath="$PROJECT_DIR$/day_04_task/day_04_task.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_05/day_05.iml" filepath="$PROJECT_DIR$/day_05/day_05.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_05_task/day_05_task.iml" filepath="$PROJECT_DIR$/day_05_task/day_05_task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_929_ redis/day_929_ redis.iml" filepath="$PROJECT_DIR$/day_929_ redis/day_929_ redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_929_mvc/day_929_mvc.iml" filepath="$PROJECT_DIR$/day_929_mvc/day_929_mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/task_jdbc/task_jdbc.iml" filepath="$PROJECT_DIR$/task_jdbc/task_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/task_login/task_login.iml" filepath="$PROJECT_DIR$/task_login/task_login.iml" />
     </modules>
