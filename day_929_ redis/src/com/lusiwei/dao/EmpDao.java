@@ -11,8 +11,15 @@ import java.util.List;
 public class EmpDao {
     private JdbcTemplate jdbcTemplate=new JdbcTemplate(JDBCUtil.getDs());
     public List<Emp> queryEmpByDept(Integer dept_id) {
-        String sql="select * from emp where dept_id=?";
-        List<Emp> query = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Emp.class),dept_id);
+        String sql;
+        List<Emp> query;
+        if (dept_id == 0) {
+            sql="select * from emp";
+            query=jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Emp.class));
+        }else {
+            sql="select * from emp where dept_id=?";
+            query=jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Emp.class),dept_id);
+        }
         return query;
     }
 
@@ -20,5 +27,10 @@ public class EmpDao {
         String sql="select * from dept";
         List<Dept> query = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Dept.class));
         return query;
+    }
+
+    public void addEmp(Emp emp) {
+        String sql = "insert into emp values(?,?,?,?,?)";
+        jdbcTemplate.update(sql, emp.getEmp_id(), emp.getDept_id(), emp.getEmp_name(), emp.getEmp_age(), emp.getEmp_sex());
     }
 }

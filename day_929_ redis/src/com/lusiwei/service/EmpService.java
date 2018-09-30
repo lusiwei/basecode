@@ -17,4 +17,11 @@ public class EmpService {
         List<Dept> depts = empDao.queryAllDept();
         return depts;
     }
+
+    public void updateEmp(int dep_id) {
+    }
+
+    public void addEmp(Emp emp) {
+        empDao.addEmp(emp);
+    }
 }

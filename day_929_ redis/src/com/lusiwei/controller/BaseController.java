@@ -16,7 +16,14 @@ public class BaseController extends HttpServlet {
         Class<? extends BaseController> aClass = this.getClass();
         try {
             Method method = aClass.getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
-            method.invoke(this, request, response);
+            String invoke = (String) method.invoke(this, request, response);
+            if (invoke != null) {
+                if (invoke.contains("redirect")) {
+                    response.sendRedirect(invoke.substring(invoke.indexOf(":")+1));
+                }else{
+                    request.getRequestDispatcher(invoke).forward(request,response);
+                }
+            }
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
